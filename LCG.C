@@ -1,4 +1,4 @@
-//LCM/LCG
+// Linear congruential generator (LCG) - Generates n numbers by additative, mulplicative or mixed LCG.
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
