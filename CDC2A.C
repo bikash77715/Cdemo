@@ -1,4 +1,4 @@
-// program to implement leical-analyser that recognise a,abb,a*b+
+// program to implement leical-analyser that recognise string of patterns: a,abb,a*b+
 
 #include<stdio.h>
 #include<conio.h>
