@@ -1,0 +1,56 @@
+//drunkard problem
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+void main()
+{
+int r,x[20],y[20],i,n;
+x[0]=0,y[0]=0;
+clrscr();
+printf("\n !!! Drunkard Problem !!!");
+printf("\n enter number of steps:\t");
+scanf("%d",&n);
+i=0;
+printf("\n current position: (%d,%d)",x[i],y[i]);
+while(i<=n)
+{
+	r=rand()%100;
+
+	if(r>=0&&r<25)
+		{
+		printf("\n random number=%d",r);
+		i++;
+		x[i]=x[i-1]+1;
+		y[i]=y[i-1]+1;
+		printf("\n Movement direction :F \n new pos=(%d,%d)",x[i],y[i]);
+
+		}
+	else if(r>=25&&r<50)
+		{
+		i++;
+		x[i]=x[i-1]-1;
+		y[i]=y[i-1]-1;
+		printf("\n Movement direction :B \n new pos=(%d,%d)",x[i],y[i]);
+
+		}
+	else if(r>=50&&r<75)
+		{
+		i++;
+		x[i]=x[i-1]+1;
+		y[i]=y[i-1];
+		printf("\n Movement direction :R \n new pos=(%d,%d)",x[i],y[i]);
+
+		}
+	else
+		{
+		i++;
+		x[i]=x[i-1];
+		y[i]=y[i-1]+1;
+		printf("\n Movement direction :L \n new pos=(%d,%d)",x[i],y[i]);
+
+		}
+
+	}
+getch();
+}
